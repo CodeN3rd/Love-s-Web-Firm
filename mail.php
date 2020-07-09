@@ -2,7 +2,7 @@
 Thanks for your message!
 
 <?php
-	$to = "aubrey@loveswebfirm.com";
+	$to = "c0d3n3rd@gmail.com";
 	$subject = "Love's Web Firm Contact Form!";
 	$body = "the user typed in: " . $_POST['email'];
   $body = "The users name is; " . $_POST['name'];

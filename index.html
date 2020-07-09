@@ -585,9 +585,32 @@
         <div class="row" data-aos="fade-up">
 
           <div class="col-lg-6 ">
-            <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ6SUdrxTjTYYRl_DrwJbHgNk&key=AIzaSyDOMnD6H8U54wwwJE_Zt7_Y71llWBfxfRs" allowfullscreen></iframe>
-          </div>
+            <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v7.0'
+          });
+        };
 
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+        <!-- Your Chat Plugin code -->
+        <div class="fb-customerchat"
+          attribution=setup_tool
+          page_id="111925550585068"
+          logged_in_greeting="Thank you for choosing Love's Web Firm, how may we help you today?"
+          logged_out_greeting="Thank you for choosing Love's Web Firm, how may we help you today?">
+        </div>
+    </div>
           <div class="col-lg-6">
             <form action="mail.php" method="POST" class="php-email-form">
               <div class="form-row">
